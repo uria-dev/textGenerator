@@ -19,7 +19,7 @@ jobs:
                   name: Run tests
                   command: npm run test --ci --runInBand --reporters=default --reporters=jest-junit
             - store_test_results:
-                  path: .circleci/test-results
+                  path: /test-results/
     build-node:
         # Build node project
         executor: node/default
