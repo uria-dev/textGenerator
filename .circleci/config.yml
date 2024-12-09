@@ -8,7 +8,7 @@ jobs:
         # Install node dependencies and run tests
         executor: node/default
         environment:
-            JEST_JUNIT_OUTPUT_DIR: ./test-results/
+            JEST_JUNIT_OUTPUT_DIR: test-results
         steps:
             - checkout
             - node/install-packages:
@@ -19,7 +19,7 @@ jobs:
                   name: Run tests
                   command: npm run test --ci --runInBand --reporters=default --reporters=jest-junit
             - store_test_results:
-                  path: /test-results/
+                  path: test-results
     build-node:
         # Build node project
         executor: node/default
