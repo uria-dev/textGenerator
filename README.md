@@ -1,5 +1,11 @@
-# webapp-template
+# Text generator
 
-This is my basic template for a web app. It uses webpack for bundling & running a local server, and tailwindcss in for styling. Stylesheets are loaded with postcss-loader.
+This is a simple text generator that uses [Webpack](https://webpack.js.org/) to bundle, [Tailwind CSS](https://tailwindcss.com/), and [Jest](https://jestjs.io/) for testing.
 
-Just initialise NPM and you're ready to go!
+## How do I run this?
+
+Simply install all dependencies using `npm i -y`, then you can use a few specific commands from the CLI.
+
+If you want to check this out on your local environment, use `npm run start` - this will initialise a locally hosted web server.
+
+If you want to see that the tests really did pass, use `npx jest` or `npm test` - both will run Jest.
