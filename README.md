@@ -22,7 +22,7 @@ So for example:
 ```js
 let randomNum = Math.random()
 // in this case, randomNum return 0.5554456356429547, but you will naturally generate something else if you run this locally.
-randomNum = randomNum.toStrin(36)
+randomNum = randomNum.toString(36)
 // randomNum is now `0.jzuvdk9xj9f`
 randomNum = randomNum.substring(2)
 // randomNum is now jzuvdk9xj9f
